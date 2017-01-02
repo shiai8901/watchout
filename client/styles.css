@@ -3,3 +3,57 @@
 /* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
 
+body {
+    font-family: helvetica;
+    font-size: 22px;
+    background-image: url('background_img.jpg');
+    background:cover no-repeat center;
+}
+.board {
+    background-color: #fff;
+}
+.about {
+    position: absolute;
+    z-index: 100;
+    top: 100px;
+    left: 240px;
+}
+.about h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.about p {
+    font-size: 16px;
+    color: #222;
+    line-height: 150%;
+}
+.board svg{
+    border: solid 2px grey;
+    background-color: #222;
+    position: absolute;
+}
+.board .mouse {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: orange;
+    position: absolute;
+    z-index: 3;
+}
+.board .enemy {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+}
+.scoreboard {
+    line-height: 150%;
+    padding: 20px;
+    width: 200px;
+    background-color: rgba(255,255,255,.5);
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+}
